@@ -1,0 +1,5 @@
+id: 2
+title: Shadows in the Moonlight
+author: Marcus Thompson
+description: A gripping mystery that unravels dark secrets hidden in a small coastal town, where nothing is as it seems and danger lurks around every corner.
+cover_image: /images/book2.jpg

@@ -1,0 +1,5 @@
+id: 1
+title: Book One
+author: Jane Doe
+description: An inspiring tale of adventure and discovery, following the journey of a young hero as they navigate a world of mystery and wonder.
+cover_image: /images/books1.jpg

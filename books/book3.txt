@@ -1,0 +1,5 @@
+id: 3
+title: Stellar Horizons
+author: Dr. Elena Rodriguez
+description: A thrilling science fiction epic that explores humanity's first voyage to distant stars, where alien civilizations and cosmic mysteries await discovery.
+cover_image: /images/book3.jpg

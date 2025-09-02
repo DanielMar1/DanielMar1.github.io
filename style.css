@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.book-list {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+}
+.book-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.book-list li {
+  margin-bottom: 15px;
+}
+.book-list button {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+.book-list button:hover {
+  background: #e0e0e0;
+}
+.book-details {
+  flex: 1;
+  padding: 40px;
+}
+.placeholder {
+  color: #888;
+  font-size: 20px;
+}
+.book-cover {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.book-info {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .book-list {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+  }
+  .book-details {
+    padding: 20px;
+  }
+  .book-cover {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Redesigned mobile layout: book list in a horizontal row */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .book-list {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    background: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    overflow-x: auto;
+  }
+  .book-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .book-list li {
+    flex: 0 0 auto;
+    min-width: 120px;
+    max-width: 160px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .book-list button {
+    font-size: 15px;
+    padding: 10px 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    width: 100%;
+    min-width: 100px;
+    max-width: 140px;
+    white-space: normal;
+    text-align: center;
+  }
+  .book-details {
+    padding: 14px 4px 20px 4px;
+  }
+  .book-info {
+    margin-bottom: 16px;
+  }
+  .placeholder {
+    font-size: 16px;
+    text-align: center;
+  }
+  .book-cover {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto 12px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  h2,
+  h4 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
